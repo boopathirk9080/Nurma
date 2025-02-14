@@ -74,7 +74,7 @@ ${cartDetails}`;
   };
 
   return (
-    <div className="min-h-screen bg-desert-50 relative">
+    <div className="min-h-screen bg-white relative">
       {/* Centered Alert */}
       {showAlert && (
         <motion.div
@@ -83,7 +83,7 @@ ${cartDetails}`;
           exit={{ opacity: 0, y: -50 }}
           className="fixed top-24 left-1/2 transform -translate-x-1/2 z-50"
         >
-          <div className="bg-primary-500 text-white px-6 py-3 rounded-lg shadow-xl">
+          <div className="bg-white text-white px-6 py-3 rounded-lg shadow-xl">
             Message sent successfully! We'll get back to you soon.
           </div>
         </motion.div>
@@ -103,10 +103,10 @@ ${cartDetails}`;
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <div className="bg-white p-8 rounded-lg shadow-xl mb-8 border border-desert-200">
+            <div className="bg-white p-8 rounded-lg shadow-xl mb-8 border border-fuchsia-300">
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-primary-100 p-3 rounded-full">
-                  <MapPin className="h-6 w-6 text-primary-600" />
+                <div className="bg-slate-100 p-3 rounded-full">
+                  <MapPin className="h-6 w-6 text-violet-500" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-desert-900">Visit Our Sanctuary</h3>
@@ -115,8 +115,8 @@ ${cartDetails}`;
               </div>
 
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-primary-100 p-3 rounded-full">
-                  <Phone className="h-6 w-6 text-primary-600" />
+                <div className="bg-slate-100 p-3 rounded-full">
+                  <Phone className="h-6 w-6 text-violet-500" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-desert-900">Call Us</h3>
@@ -125,14 +125,14 @@ ${cartDetails}`;
               </div>
 
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-primary-100 p-3 rounded-full">
-                  <Mail className="h-6 w-6 text-primary-600" />
+                <div className="bg-slate-100 p-3 rounded-full">
+                  <Mail className="h-6 w-6 text-violet-500" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-desert-900">Email Us</h3>
                   <a
                     href="mailto:boopathi7476@gmail.com"
-                    className="text-primary-600 hover:text-primary-700 transition-colors"
+                    className="text-desert-700 "
                   >
                     boopathi7476@gmail.com
                   </a>
@@ -140,14 +140,14 @@ ${cartDetails}`;
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="bg-primary-100 p-3 rounded-full">
-                  <MessageCircle className="h-6 w-6 text-primary-600" />
+                <div className="bg-slate-100 p-3 rounded-full">
+                  <MessageCircle className="h-6 w-6 text-violet-500" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-desert-900">WhatsApp</h3>
                   <button
                     onClick={handleWhatsAppClick}
-                    className="text-primary-600 hover:text-primary-700 transition-colors"
+                    className="text-desert-700 "
                   >
                     Chat with us on WhatsApp
                   </button>
@@ -159,7 +159,7 @@ ${cartDetails}`;
             <div className="grid grid-cols-2 gap-4 mb-8">
               <a
                 href="mailto:boopathi7476@gmail.com"
-                className="bg-primary-500 text-white py-3 px-6 rounded-md hover:bg-primary-600 transition-colors flex items-center justify-center gap-2 shadow-lg"
+                className="bg-cyan-400 text-white py-3 px-6 rounded-md hover:bg-cyan-600 transition-colors flex items-center justify-center gap-2 shadow-lg"
               >
                 <Mail className="h-5 w-5" />
                 Email Us
@@ -174,14 +174,14 @@ ${cartDetails}`;
             </div>
 
             {/* Egyptian Beauty Quote */}
-            <div className="bg-desert-100 p-6 rounded-lg border border-desert-200">
+            <div className="bg-fuchsia-50 p-6 rounded-lg border border-fuchsia-300">
               <p className="text-desert-800 italic">
                 "Beauty flows like the Nile, nurturing and eternal. Let us guide you on your journey to timeless radiance."
               </p>
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-xl border border-desert-200">
+          <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-xl border border-fuchsia-300">
             <div className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-desert-900">
@@ -193,7 +193,7 @@ ${cartDetails}`;
                   value={formData.name}
                   style={{ padding: "5px", padding: "5px", borderWidth: "2px" }}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="mt-1 block w-full rounded-md  border-desert-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-200 transition-colors"
+                  className="mt-1 block w-full rounded-md  border-fuchsia-300 shadow-sm  focus:ring focus:ring-cyan-100 transition-colors"
                   required
                 />
               </div>
@@ -207,7 +207,7 @@ ${cartDetails}`;
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   style={{ padding: "5px", padding: "5px", borderWidth: "2px" }}
-                  className="mt-1 block w-full rounded-md border-desert-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-200 transition-colors"
+                  className="mt-1 block w-full rounded-md border-fuchsia-300 shadow-sm  focus:ring focus:ring-cyan-100 transition-colors"
                   required
                 />
               </div>
@@ -221,7 +221,7 @@ ${cartDetails}`;
                   value={formData.message}
                   style={{ padding: "5px", padding: "5px", borderWidth: "2px" }}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="mt-1 block w-full rounded-md border-desert-300 shadow-sm focus:border-primary-500 focus:ring focus:ring-primary-200 transition-colors"
+                  className="mt-1 block w-full rounded-md border-fuchsia-300 shadow-sm  focus:ring focus:ring-cyan-100 transition-colors"
                   required
                 ></textarea>
               </div>
@@ -245,7 +245,7 @@ ${cartDetails}`;
               <button
                 type="submit"
                 disabled={sending}
-                className="w-full bg-primary-500 text-white py-3 px-4 rounded-md hover:bg-primary-600 transition-colors flex items-center justify-center gap-2 shadow-lg disabled:opacity-50"
+                className="w-full bg-cyan-400 text-white py-3 px-4 rounded-md hover:bg-cyan-600 transition-colors flex items-center justify-center gap-2 shadow-lg disabled:opacity-50"
               >
                 {sending ? (
                   'Sending...'
